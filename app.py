@@ -13,6 +13,11 @@ st.markdown("""
 
         header, footer, #MainMenu {visibility: hidden;}
 
+        /* ซ่อนเฉพาะปุ่มพับเก็บด้านใน (กากบาท/ลูกศร) เพื่อให้ Sidebar ค้างไว้เสมอ */
+        [data-testid="stSidebarCollapseButton"] {
+            display: none !important;
+        }
+
         .centered-title {
             font-size: 64px;
             font-weight: 600;
@@ -27,7 +32,6 @@ st.markdown("""
         section[data-testid="stSidebar"] {
             background-color: #FDFDFD;
             border-right: 1px solid #E8ECEF;
-            width: 300px !important;
         }
 
         .stSidebar div.stButton > button {
