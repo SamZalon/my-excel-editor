@@ -24,7 +24,7 @@ st.markdown("""
 
         div.stPopover > button {
             background-color: #2BCB8B;
-            color: #FFFFFF;
+            color: #Green;
             border-radius: 4px;
             font-size: 16px;
             font-weight: 500;
