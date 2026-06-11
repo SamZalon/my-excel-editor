@@ -13,11 +13,6 @@ st.markdown("""
 
         header, footer, #MainMenu {visibility: hidden;}
 
-        [data-testid="collapsedControl"], 
-        [data-testid="stSidebarCollapseButton"] {
-            display: none !important;
-        }
-
         .centered-title {
             font-size: 64px;
             font-weight: 600;
@@ -33,7 +28,6 @@ st.markdown("""
             background-color: #FDFDFD;
             border-right: 1px solid #E8ECEF;
             width: 300px !important;
-            min-width: 300px !important;
         }
 
         .stSidebar div.stButton > button {
