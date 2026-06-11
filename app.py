@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Excel Editor", layout="centered", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Excel Editor", layout="wide", initial_sidebar_state="collapsed")
 
 st.markdown("""
     <style>
@@ -13,24 +13,15 @@ st.markdown("""
 
         header, footer, #MainMenu {visibility: hidden;}
 
-        .main-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 25vh;
-            text-align: center;
-        }
-
         .centered-title {
             font-size: 64px;
             font-weight: 600;
             color: #263238;
-            margin-bottom: 40px;
-            line-height: 76px;
+            text-align: center;
+            margin-top: 5vh;
+            margin-bottom: 30px; 
         }
 
-        /* Main Upload Button Style */
         div.stPopover > button {
             background-color: #2BCB8B;
             color: #FFFFFF;
@@ -48,7 +39,6 @@ st.markdown("""
             color: #FFFFFF;
         }
 
-        /* Buttons inside Popup Style */
         .popup-container div.stButton > button {
             background-color: #FFFFFF;
             color: #263238;
@@ -67,7 +57,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-container">', unsafe_allow_html=True)
 st.markdown('<div class="centered-title">Excel Editor</div>', unsafe_allow_html=True)
 
 with st.popover("Upload"):
@@ -75,5 +64,3 @@ with st.popover("Upload"):
     st.button("Upload File", key="up_file")
     st.button("Upload Link", key="up_link")
     st.markdown('</div>', unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
